@@ -16,10 +16,8 @@ Points: 100
 
 picoCTF flags are all encapsulated with "picoCTF{<flag goes here>}". There are many complicated regular expressions that apply to the flag but the simplest one would be
     
-    ````python
+   
     picoCTF{.*}
-    
-    ````
 
 
 ## Flag
