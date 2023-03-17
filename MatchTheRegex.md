@@ -6,6 +6,7 @@ How about trying to match a regular expression.
 
 ## Challenge Information
 
+Tags: Web Exploitation
 Points: 100
 
 ## Hints
