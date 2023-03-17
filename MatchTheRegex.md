@@ -4,9 +4,11 @@
 
 How about trying to match a regular expression.
 
+## Tags
+Web Exploitation
+
 ## Challenge Information
 
-Tags: Web Exploitation
 Points: 100
 
 ## Hints
