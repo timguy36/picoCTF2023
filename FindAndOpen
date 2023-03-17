@@ -1,0 +1,33 @@
+# FindAndOpen
+
+## Challenge Description
+
+Someone might have hidden the password in the trace file.
+Find the key to unlock this file. This tracefile might be good to analyze.
+
+## Tags
+Forensics
+
+## Challenge Information
+
+Points: 200
+
+## Hints
+
+1) Download the pcap and look for the password or flag.
+2) Don't try to use a password cracking tool, there are easier ways here.
+
+## Solution
+
+The challenge provides us with two files, a password protected zip and a wireshark packet capture.
+````
+flag.zip: Zip archive data, at least v1.0 to extract, compression method=store
+dump.pcap: pcap capture file, microsecond ts (little-endian) - version 2.4 (Ethernet, capture length 262144)
+````
+<br>
+
+
+
+## Flag
+
+picoCTF{succ3ssfully_matchtheregex_0694f25b}
