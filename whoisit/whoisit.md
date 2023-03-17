@@ -118,17 +118,23 @@ QW1vdW50OiAgJDEsMDAwLDAwMAo=
 ----_NmP-426c22a2e0d8fc9a-Part_1--
 ````
 
+
 The challenge description mentions that the receiver does not believe the email was sent by Larry Page which hints us that the email might have been spoofed.
 
 The hint mentions that whois is helpful on ip addresses. Upon further inspection of the metadata, we can see that the sender address lpage@onionmail.org is associated with the ip address 173.249.33.206 on a number of instances
+
 ````
 spf=pass (google.com: domain of lpage@onionmail.org designates 173.249.33.206 as permitted sender) smtp.mailfrom=lpage@onionmail.org;
 ````
 
+
 whois is not a typo but a internet domain lookup service, we can run the ip address we found with whois.
+
 
 ````
 t@Users-MacBook-Pro Downloads % whois 173.249.33.206
+````
+````
 % IANA WHOIS server
 % for more information on IANA, visit http://www.iana.org
 % This query returned 1 object
@@ -252,12 +258,16 @@ source:         RIPE
 % This query was served by the RIPE Database Query Service version 1.106 (DEXTER)
 ````
 
+
 The flag is the first and last name of the actual sender of the email, and the whois lookup gave us a name we could try.
 
-Encapsulate the name with the "picoCTF{}" and
 ````
 person:         Wilhelm Zwalina
 ````
+
+
+Encapsulate the name with the "picoCTF{}" and
+
 
 ## Flag
 
